@@ -120,21 +120,23 @@ Docker usa un mecanismo de caché cuando crea imágenes para acelerar el proceso
 # COMPLETAR CON LA RESPUESTA
 
 **¿Qué es una imagen huérfana?**
-# COMPLETAR CON LA RESPUESTA
+Una imagen huérfana en Docker es una imagen que no tiene ninguna etiqueta asociada (un tag). Estas imágenes pueden ocupar espacio en disco innecesariamente y suelen generarse cuando se actualizan o reemplazan imágenes y se pierden las referencias a las versiones anteriores.
+
+En Docker, las imágenes huérfanas se suelen llamar imágenes colgantes o dangling images. Estas imágenes se identifican por tener el identificador <none> tanto para el repositorio como para la etiqueta (tag).
 
 ### Identificar imágenes huérfanas
 ```
-
+docker images -f "dangling=true"
 ```
 
 ### Listar los IDS de las imágenes huérfanas
 ```
-
+docker images -q -f "dangling=true"
 ```
 
 ### Eliminar imágenes huérfanas
 ```
-
+docker image prune -f
 ```
 
 ### Ejecutar un archivo Dockerfile que tiene otro nombre
