@@ -48,3 +48,26 @@ Resumen
 Memoria RAM asignada: 300 MB.
 Límite total de memoria y swap: 1024 MB.
 Memoria swap disponible: 724 MB.
+
+***que comando se puede hcaer un monitoreo de los recursos como memoria del contenedor de docker***
+1. docker stats
+El comando docker stats proporciona una visualización en tiempo real del uso de recursos por cada contenedor.
+
+Uso Básico
+Ejecuta el siguiente comando en PowerShell para ver el uso de recursos (CPU, memoria, E/S de red, etc.) de todos los contenedores en ejecución:
+```
+docker stats
+```
+Este comando muestra una tabla en tiempo real con las estadísticas de cada contenedor en ejecución. Si deseas monitorear un contenedor específico, puedes especificar su ID o nombre:
+```
+docker stats <container_id_or_name>
+```
+
+2. docker inspect
+El comando docker inspect te permite obtener detalles específicos sobre un contenedor, incluyendo el uso de memoria.
+
+Uso Básico
+Para obtener información detallada sobre un contenedor específico, ejecuta:
+```
+docker inspect <container_id_or_name>
+```
