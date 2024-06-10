@@ -51,13 +51,54 @@ La opción -t se utiliza para etiquetar la imagen que se está construyendo con 
  
 ### Ejecutar el archivo Dockerfile y construir una imagen en la versión 1.0
 ```
+# Base de la imagen
+FROM centos:7
+
+# Actualiza el sistema operativo
+RUN yum update -y
+
+# Instala Apache
+RUN yum install httpd -y
+
+# Copia los archivos de la carpeta ./web a /var/www/html
+COPY ./web /var/www/html
+
+# Expone el puerto 80
+EXPOSE 80
+
+# Inicia Apache en primer plano
+CMD ["apachectl", "-D", "FOREGROUND"]
 
 ```
+1. Descargar la Imagen de CentOS 7
+Primero, necesitas descargar la imagen base de CentOS 7.
+```
+docker pull centos:7
+```
+Este comando descarga la imagen de CentOS 7 desde el repositorio de Docker Hub.
 
+2. Crear y Ejecutar un Contenedor con CentOS 7
+Crea y ejecuta un contenedor interactivo de CentOS 7:
+```
+docker run -it --name mi-contenedor-centos centos:7 /bin/bash
+```
+Esto inicia un contenedor en modo interactivo (-it) y abre una sesión de Bash dentro del contenedor.
+
+3. Actualizar el Sistema Operativo dentro del Contenedor
+Una vez dentro del contenedor, ejecuta el siguiente comando para actualizar el sistema operativo:
+```
+yum update -y
+```
+4. Instalar Apache
+Luego, instala Apache ejecutando:
+```
+yum install httpd -y
+```
 **¿Cuántos pasos se han ejecutado?**
 
-### Inspeccionar la imagen creada
-# COMPLETAR CON UNA CAPTURA
+6
+
+![mapeo](imagenes/dockerfile1.PNG)
 
 **Modificar el archivo index.html para incluir su nombre**
 **¿Cuántos pasos se han ejecutado? ¿Observa algo diferente en la creación de la imagen**
