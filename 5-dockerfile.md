@@ -98,7 +98,7 @@ yum install httpd -y
 
 6
 
-![mapeo](imagenes/1.PNG)
+![mapeo](imagenes/1.png)
 
 **Modificar el archivo index.html para incluir su nombre**
 <!DOCTYPE html>
