@@ -96,7 +96,7 @@ yum install httpd -y
 ```
 **¿Cuántos pasos se han ejecutado?**
 
-6
+12
 
 ![mapeo](imagenes/1.png)
 Construye la imagen Docker ejecutando:
@@ -125,6 +125,7 @@ Con esto, tu contenedor debería estar ejecutando Apache y sirviendo los archivo
     <h1>Johanna Huaraca</h1>
   </body>
 </html>
+![mapeo](imagenes/2.png)
 **¿Cuántos pasos se han ejecutado? ¿Observa algo diferente en la creación de la imagen**
 
 ## Mecanismo de caché
