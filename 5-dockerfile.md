@@ -99,6 +99,19 @@ yum install httpd -y
 6
 
 ![mapeo](imagenes/1.png)
+Construye la imagen Docker ejecutando:
+```
+docker build -t mi-imagen-apache .
+```
+Esto creará una imagen Docker con el nombre mi-imagen-apache.
+
+Inicia un contenedor basado en esta imagen ejecutando:
+```
+docker run -d -p 80:80 mi-imagen-apache
+```
+Esto iniciará un contenedor en segundo plano (-d) y mapeará el puerto 80 del host al puerto 80 del contenedor.
+
+Con esto, tu contenedor debería estar ejecutando Apache y sirviendo los archivos que has copiado a /var/www/html en el puerto 80. Puedes verificarlo abriendo tu navegador y navegando a http://localhost (o la IP correspondiente de tu máquina si no es localhost).
 
 **Modificar el archivo index.html para incluir su nombre**
 <!DOCTYPE html>
