@@ -98,7 +98,7 @@ yum install httpd -y
 
 6
 
-![mapeo](imagenes/dockerfile1.PNG)
+![mapeo](imagenes/1.PNG)
 
 **Modificar el archivo index.html para incluir su nombre**
 <!DOCTYPE html>
