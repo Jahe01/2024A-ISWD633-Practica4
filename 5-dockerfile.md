@@ -101,6 +101,17 @@ yum install httpd -y
 ![mapeo](imagenes/dockerfile1.PNG)
 
 **Modificar el archivo index.html para incluir su nombre**
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Johanna Huaraca</h1>
+  </body>
+</html>
 **¿Cuántos pasos se han ejecutado? ¿Observa algo diferente en la creación de la imagen**
 
 ## Mecanismo de caché
