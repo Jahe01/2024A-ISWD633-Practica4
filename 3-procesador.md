@@ -10,6 +10,12 @@ Asignar núcleos de CPU específicos:
 ```
 
 **¿Como saber el numero de procesadores virtuales que tiene una máquina?**
+Windows
+Usando WMIC en el powershell
+```
+wmic CPU get NumberOfLogicalProcessors
+```
+Este comando en la línea de comandos de Windows muestra el número de procesadores lógicos (vCPUs).
 
 ### Para crear y ejecutar los siguientes contenedores usar la imagen de nginx:alpine
 
