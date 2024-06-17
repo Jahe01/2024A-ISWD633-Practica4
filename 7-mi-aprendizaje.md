@@ -1,3 +1,1 @@
-# COMPLETAR  
-Comparando sus conocimientos antes de hacer la práctica con sus conocimientos después de hacer la tarea, explicar los principales aprendizajes logrados para beneficio de su formación profesional.  
-Si solucionó un problema presentado al realizar la práctica también se debe documentar.
+En resumen, la creación de un Dockerfile efectivo requiere una combinación de estructura clara, buenas prácticas, atención a detalles y un compromiso con el aprendizaje continuo. Al seguir estas recomendaciones y explorar activamente nuevas técnicas, podemos convertirnos en expertos en la creación y utilización de imágenes Docker para diversas aplicaciones. 
