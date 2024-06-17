@@ -136,13 +136,7 @@ Docker usa un mecanismo de caché cuando crea imágenes para acelerar el proceso
 - Instrucción COPY y ADD: Si los archivos copiados no han cambiado, Docker reutiliza la capa de caché correspondiente.
 ![mapeo](imagenes/dockerfile-cache.PNG)
 
-### Crear un contenedor a partir de las imagen creada, mapear todos los puertos
-```
 
-```
-
-### ¿Con que puerto host se está realizando el mapeo?
-# COMPLETAR CON LA RESPUESTA
 
 **¿Qué es una imagen huérfana?**
 Una imagen huérfana en Docker es una imagen que no tiene ninguna etiqueta asociada (un tag). Estas imágenes pueden ocupar espacio en disco innecesariamente y suelen generarse cuando se actualizan o reemplazan imágenes y se pierden las referencias a las versiones anteriores.
